@@ -282,6 +282,10 @@
   gap: 1.6rem;
 }
 
+.bx {
+  color: #e67e22;
+}
+
 .list {
   list-style: none;
   display: flex;

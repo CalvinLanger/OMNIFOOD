@@ -22,11 +22,14 @@
     <!-- CSS STYLES -->
     <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="style.css" />
+    
+    <!-- MEDIA QUERIES -->
+    <link rel="stylesheet" href="queries.css">
 
     <title>Omnifood</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header ">
       <a href="#">
         <img class="logo" src="img/omnifood-logo.png" alt="omnifood logo"
       /></a>
@@ -39,6 +42,11 @@
           <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <i class='bx bx-menu icon-mobile-nav' name="menu-outline"></i>
+        <i class='bx bx-x icon-mobile-nav' name="close-outline"></i>
+      </button>
     </header>
 
     <main>
@@ -470,7 +478,7 @@
               </li>
 
               <li class="list-item">
-                <i class="bx bx-x bx-lg"></i>
+                <i class="bx bx-x bx-lg hidden-el"></i>
               </li>
             </ul>
 
@@ -662,7 +670,7 @@
         </nav>
 
         <nav class="nav-col">
-          <p class="footer-heading">resources</p>
+          <p class="footer-heading">Resources</p>
           <ul class="footer-nav">
             <li><a class="footer-link" href="#">Recipe directory</a></li>
             <li><a class="footer-link" href="#">Help center</a></li>

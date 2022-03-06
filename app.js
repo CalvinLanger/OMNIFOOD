@@ -11,23 +11,6 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-// SMOOTH SCROLLING ANIMATION
-const allLinks = document.querySelectorAll("a:link");
-
-allLinks.forEach(function (link) {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const href = link.getAttribute("href");
-
-    // SCROLL BACK TO TOP
-    if (href === "#")
-      widnow.scrollTop({
-        top: 0,
-        behavior: "smooth",
-      });
-  });
-});
-
 // FIXING FLEXBOX GAP MISSING IN SOME SAFARI VERSION
 function checkFlexGap() {
   var flex = document.createElement("div");
